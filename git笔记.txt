@@ -43,6 +43,13 @@ git pull [远端名] [分支名]
 将仓库里的更新都拉到本地,并自动合并 相当于fetch+merge
 如果不指定远端名和分支名, 则拉取所有分支并更新
 
+warning:LF will be replaced by CRLF in ...
+由Git的换行符检查功能引起。LF是Linux的换行符, 而CRLF是enter+换行
+git config --global core.autocrlf [false/warn/true]
+false - 不做任何检查  warn - 检查并警告  true - 检查如混用则拒绝提交
+1-Linux建议使用最严格的true 仅在Windows使用可false
+2-使用input 在提交时把CRLF转换成LF 签出时不转换
+git config --global core.autocrlf input
 
 
 
