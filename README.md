@@ -1,2 +1,4 @@
-Git常用命令 后续有用到其他的再补充
+Git Common Commands
+
+if there are other commands I use in the future, I will add here.
 -2022/03/11
